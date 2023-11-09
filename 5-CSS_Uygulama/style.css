@@ -16,6 +16,11 @@ body {
     background-color: #fff;
 }
 
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+    font-family: Montserrat;
+}
+
 a {
     text-decoration: none;
 }
@@ -23,6 +28,13 @@ a {
 ul {
     list-style-type: none;
 }
+
+
+.img-fluid{
+    max-width: 256px;
+    height: auto;
+}
+
 
 .clearfix::after {
     content: "";
@@ -44,11 +56,13 @@ ul {
 
 /* Navbar */
 nav {
+    width: 100%;
     font-family: Montserrat;
     background-color: #2C3E4F;
     color: #fff;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: fixed;
 }
 
 #logo-box {
@@ -59,7 +73,7 @@ nav {
 #logo-box .logo {
     color: #fff;
     font-weight: 700;
-    font-size: 3.2rem;
+    font-size: 2.8rem;
 }
 
 #nav-links {
@@ -82,4 +96,45 @@ nav {
 }
 #nav-links .nav-link:hover{
     color: #1abc9b;
+}
+
+header{
+    background-color: #1abc9b;
+    height: 700px;
+    padding-top: calc(106px + 7rem);
+    text-align: center;
+}
+
+header h1{
+    color: #fff;
+    font-size: 6rem;
+}
+header h2{
+    color: #fff;
+    font-size: 2.4rem;
+    font-family: "Lato";
+    font-weight: 300;
+}
+
+.star-light{
+    border: 0.4rem solid #fff;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 10px;
+    max-width: 25rem;
+    margin: 2.5rem auto;
+    overflow: visible;
+    height: 0;
+}
+
+.star-light::after{
+    content: "\2605";
+    color: #fff;
+    font-weight: 900;
+    font-size: 3.2rem;
+    position: relative;
+    top: -28px;
+    padding: 0 8px;
+    background-color: #1abc9b;
 }
