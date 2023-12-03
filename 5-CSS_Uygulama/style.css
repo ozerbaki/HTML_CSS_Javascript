@@ -29,6 +29,46 @@ ul {
     list-style-type: none;
 }
 
+section{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+
+.btn{
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn-outline{
+    color: #fff;
+    border-color: #fff;
+    background-color: transparent;
+    padding: 2.2rem 1.6rem;
+}
+
+.btn-outline:hover{
+    color: #212529;
+    background-color: #fff;
+}
+
+.btn-primary{
+    background-color: #18bc9c;
+    border-color: #18bc9c;
+    padding: 1.2rem 1rem;
+    color: #fff;
+}
+
+.btn-primary:hover{
+    background-color: #128f76;
+    border-color: #128f76;
+}
 
 .img-fluid{
     max-width: 256px;
@@ -157,10 +197,7 @@ hr.star-dark{
 /* Portfolio*/
 
 #portfolio{
-    height: 600px;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    text-align: center;
+    
 }
 
 #portfolio h2{
@@ -185,6 +222,7 @@ hr.star-dark{
 
 .portfolio-item img{
     display: block;
+    border-radius: 13px;
 }
 
 .img-overlay{
@@ -209,4 +247,39 @@ hr.star-dark{
 
 .portfolio-item:hover .img-overlay{
     opacity: 0.7;
+    border-radius: 13px;
 }
+
+/*About*/
+
+#about{
+    background-color: #1abc9b;
+    color: #fff;
+}
+
+#about h2{
+    font-size: 4.8rem;
+}
+
+#about-text{
+    text-align: left;
+}
+
+#about-text .left{
+    float: left;
+    width: 50%;
+    padding-right: 2rem;
+    padding-left: 23rem;
+}
+
+#about-text .right{
+    float: right;
+    width: 50%;
+    padding-left: 2rem;
+    padding-right: 23rem;
+}
+
+#about-text .text{
+    font-size: 2rem;
+}
+
